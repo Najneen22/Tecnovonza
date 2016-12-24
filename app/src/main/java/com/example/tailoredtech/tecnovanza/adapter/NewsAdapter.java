@@ -42,8 +42,8 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
         holder.txtDate.setText(news.getTime());
         holder.txtDesc.setText(news.getDescription());
         holder.txtLatestReleaseVer.setText(news.getComments());
-        Picasso.with(mContext).load(news.getImg()).placeholder(R.mipmap.placeholder).into(holder.sImage);
-        Picasso.with(mContext).load(news.getPimg()).placeholder(R.mipmap.placeholder).into(holder.bImage);
+        Picasso.with(mContext).load(news.getImg()).placeholder(R.mipmap.placeholder).into(holder.bImage);
+        Picasso.with(mContext).load(news.getPimg()).placeholder(R.mipmap.placeholder).into(holder.sImage);
     }
 
     @Override
