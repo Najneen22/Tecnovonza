@@ -70,9 +70,6 @@ public class NavigationDrawerFragment extends Fragment {
                 super.onDrawerClosed(drawerView);
             }
         };
-        if (!mUserLearned && !mFromSavedInstanceState) {
-            drawerLayout.openDrawer(containerView);
-        }
         mDrawerLayout.addDrawerListener(mDrawerToggle);
         mDrawerLayout.post(new Runnable() {
             @Override
@@ -82,12 +79,6 @@ public class NavigationDrawerFragment extends Fragment {
         });
     }
 
-    public void hideNavigationDrawer()
-    {
-        mDrawerToggle.setDrawerIndicatorEnabled(false);
-        mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
-    }
-
     public static void saveToPreference(Context context, String preferenceName, String preferenceValue) {
         SharedPreferences sharedPreferences = context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -95,10 +86,7 @@ public class NavigationDrawerFragment extends Fragment {
         editor.apply();
     }
 
-    public static String readFromPreference(Context context, String preferenceName, String defaultValue) {
-        SharedPreferences sharedPreferences = context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
-        return sharedPreferences.getString(preferenceName, defaultValue);
-    }
+
 
 
 }
