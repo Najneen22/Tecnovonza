@@ -81,5 +81,4 @@ public class MusicFragment extends Fragment {
         // display dialog
         dialog.show();
     }
-
 }
