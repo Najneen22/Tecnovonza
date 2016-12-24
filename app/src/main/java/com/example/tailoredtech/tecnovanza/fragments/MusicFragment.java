@@ -45,6 +45,7 @@ public class MusicFragment extends Fragment {
         // attaching data adapter to spinner
         spinner.setAdapter(dataAdapter);
 
+
         return view;
     }
 

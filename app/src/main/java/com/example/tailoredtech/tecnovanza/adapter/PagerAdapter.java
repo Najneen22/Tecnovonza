@@ -36,4 +36,16 @@ public class PagerAdapter extends FragmentStatePagerAdapter{
     public int getCount() {
         return NUMBER_OF_TABS;
     }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        //this is where you set the titles
+        switch(position) {
+            case 0:
+                return "Music";
+            case 1:
+                return "News";
+        }
+        return null;
+    }
 }
