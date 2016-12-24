@@ -5,6 +5,113 @@
     android:background="@color/grey"
     tools:context="com.example.tailoredtech.tecnovanza.fragments.MusicFragment">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@mipmap/background"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                android:paddingLeft="170dp"
+                android:gravity="bottom">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Google Music"
+                    android:gravity="left"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Playlists. Stations. Artists. Albums..."
+                    android:textColor="@color/white"
+                    android:textStyle="normal"
+                    android:textSize="14dp"/>
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="end"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Coldplay"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mystica"
+                    android:textSize="12dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daft Punk"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rock"
+                    android:textSize="12dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"/>
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/play"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"/>
+    </FrameLayout>
+
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
