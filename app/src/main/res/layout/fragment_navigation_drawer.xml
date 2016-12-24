@@ -9,12 +9,14 @@
     <ImageView
         android:id="@+id/img_navigation_header"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="200dp"
+        android:src="@mipmap/city"/>
 
     <TextView
         android:id="@+id/txt_navigation_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
         android:text="@string/activities"/>
 
 
