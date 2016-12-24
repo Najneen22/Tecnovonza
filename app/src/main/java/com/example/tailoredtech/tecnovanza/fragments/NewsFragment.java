@@ -90,12 +90,9 @@ public class NewsFragment extends Fragment {
 
         RecyclerView newsRecycler = (RecyclerView) view.findViewById(R.id.news_list);
 
-        NewsAdapter adapter = new NewsAdapter(new ArrayList<String>());
-        LinearLayoutManager manager = new LinearLayoutManager(getActivity());
-
-        newsRecycler.setLayoutManager(manager);
+        NewsAdapter adapter = new NewsAdapter(getActivity(),newsList);
         newsRecycler.setAdapter(adapter);
-
+        newsRecycler.setLayoutManager(new LinearLayoutManager(getActivity()));
         return view;
     }
 
