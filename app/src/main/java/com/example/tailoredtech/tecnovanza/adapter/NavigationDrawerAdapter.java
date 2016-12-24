@@ -58,7 +58,7 @@ public class NavigationDrawerAdapter extends RecyclerView.Adapter<NavigationDraw
 
 
     public enum DrawerElements {
-        Share(R.mipmap.icon,"Share"), FeedBack(R.mipmap.icon,"Feedback");
+        Share(R.mipmap.ic_share,"Share"), FeedBack(R.mipmap.ic_send,"Feedback");
 
         private int imgId;
         private String title;
