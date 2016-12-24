@@ -1,7 +1,9 @@
-package com.example.tailoredtech.tecnovanza;
+package com.example.tailoredtech.tecnovanza.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.tailoredtech.tecnovanza.R;
 
 public class HomeActivity extends AppCompatActivity {
 
