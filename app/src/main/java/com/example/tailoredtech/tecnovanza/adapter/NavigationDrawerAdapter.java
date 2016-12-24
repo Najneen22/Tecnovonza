@@ -53,6 +53,12 @@ public class NavigationDrawerAdapter extends RecyclerView.Adapter<NavigationDraw
             super(itemView);
             imgNavigation= (ImageView) itemView.findViewById(R.id.img_navigation_item);
             txtNavigationTitle= (TextView) itemView.findViewById(R.id.txt_navigation_title);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                }
+            });
         }
     }
 
