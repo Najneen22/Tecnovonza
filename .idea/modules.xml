@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Tecnovanza.iml" filepath="$PROJECT_DIR$/Tecnovanza.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tecnovonza.iml" filepath="$PROJECT_DIR$/Tecnovonza.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
