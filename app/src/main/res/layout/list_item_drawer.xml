@@ -4,13 +4,14 @@
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
     android:paddingLeft="15dp"
-    android:background="@android:color/white">
+    android:background="@drawable/draw_scroll_top_grey">
 
     <ImageView
         android:id="@+id/img_navigation_item"
         android:layout_width="25dp"
         android:layout_height="wrap_content"
         android:alpha="0.5"
+        android:clickable="false"
         android:layout_marginRight="20dp"/>
 
     <TextView
