@@ -5,4 +5,6 @@
     <string name="activities">Activities</string>
     <string name="txt_music">MUSIC</string>
     <string name="txt_news">NEWS</string>
+    <string name="drawer_open">Drawer open</string>
+    <string name="drawer_close">Drawer Close</string>
 </resources>
