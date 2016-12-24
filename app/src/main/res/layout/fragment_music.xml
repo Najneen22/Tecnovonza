@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey"
+    android:orientation="vertical"
     tools:context="com.example.tailoredtech.tecnovanza.fragments.MusicFragment">
 
     <FrameLayout
@@ -20,6 +21,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
+                android:scaleType="centerCrop"
                 android:src="@mipmap/background"/>
 
             <LinearLayout
