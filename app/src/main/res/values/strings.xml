@@ -10,4 +10,6 @@
     <string name="txt_movie">Games</string>
     <string name="txt_books">Games</string>
 
+    <string name="drawer_open">Drawer open</string>
+    <string name="drawer_close">Drawer Close</string>
 </resources>
