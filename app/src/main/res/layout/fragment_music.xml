@@ -26,8 +26,7 @@
 
                 <view
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@colors/grey"/>
+                    android:layout_height="1dp"/>
 
                 <Spinner
                     android:id="@+id/spinner"
@@ -51,8 +50,7 @@
 
                 <view
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@colors/grey"/>
+                    android:layout_height="1dp"/>
 
                 <EditText
                     android:layout_width="match_parent"

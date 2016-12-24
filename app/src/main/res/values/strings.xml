@@ -5,4 +5,9 @@
     <string name="activities">Activities</string>
     <string name="txt_music">MUSIC</string>
     <string name="txt_news">NEWS</string>
+    <string name="txt_game">Games</string>
+    <string name="txt_application">Games</string>
+    <string name="txt_movie">Games</string>
+    <string name="txt_books">Games</string>
+
 </resources>
