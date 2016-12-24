@@ -7,7 +7,6 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TableLayout;
 
 import com.example.tailoredtech.tecnovanza.R;
 import com.example.tailoredtech.tecnovanza.adapter.PagerAdapter;
@@ -15,7 +14,7 @@ import com.example.tailoredtech.tecnovanza.adapter.PagerAdapter;
 public class HomeFragment extends Fragment {
 
     private ViewPager viewPager;
-    private TableLayout tableLayout;
+    private TabLayout tabLayout;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -36,17 +35,16 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        viewPager = (ViewPager) view.findViewById(R.id.viewpager);
-        tableLayout = (TableLayout) view.findViewById(R.id.tab_layout);
 
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
+        viewPager = (ViewPager) view.findViewById(R.id.viewpager);
+        tabLayout = (TabLayout) view.findViewById(R.id.tab_layout);
+
         tabLayout.addTab(tabLayout.newTab().setText(getString(R.string.txt_music)));
         tabLayout.addTab(tabLayout.newTab().setText(getString(R.string.txt_news)));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
-        final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
         final PagerAdapter adapter = new PagerAdapter
-                (getSupportFragmentManager(), tabLayout.getTabCount());
+                (getChildFragmentManager());
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
