@@ -28,7 +28,7 @@ public class MusicFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_music, container, false);
-        Spinner spinner = (Spinner) view.findViewById(R.id.spinner);
+        /*Spinner spinner = (Spinner) view.findViewById(R.id.spinner);
         // Spinner Drop down elements
         ArrayList<String> categories = new ArrayList<String>();
         categories.add("Automobile");
@@ -42,7 +42,7 @@ public class MusicFragment extends Fragment {
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, categories);
 
         // Drop down layout style - list view with radio button
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);*/
 
         return view;
     }
