@@ -31,18 +31,19 @@ public class MusicFragment extends Fragment {
         Spinner spinner = (Spinner) view.findViewById(R.id.spinner);
         // Spinner Drop down elements
         ArrayList<String> categories = new ArrayList<String>();
-        categories.add("Automobile");
-        categories.add("Business Services");
-        categories.add("Computers");
-        categories.add("Education");
-        categories.add("Personal");
-        categories.add("Travel");
+        categories.add(getString(R.string.txt_game));
+        categories.add(getString(R.string.txt_application));
+        categories.add(getString(R.string.txt_movie));
+        categories.add(getString(R.string.txt_books));
 
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, categories);
 
         // Drop down layout style - list view with radio button
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        // attaching data adapter to spinner
+        spinner.setAdapter(dataAdapter);
 
         return view;
     }
